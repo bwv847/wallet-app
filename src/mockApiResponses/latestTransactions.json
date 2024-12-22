@@ -1,0 +1,74 @@
+{
+  "latestTransactions": [
+    {
+      "type": "Credit",
+      "amount": 14.06,
+      "name": "Apple",
+      "description": null,
+      "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+      "pending": true,
+      "authorizedUser": null,
+      "icon": null
+    },
+    {
+      "type": "Payment",
+      "amount": 174,
+      "name": null,
+      "description": null,
+      "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": null
+    },
+    {
+      "type": "Credit",
+      "amount": 3.24,
+      "name": "Apple",
+      "description": null,
+      "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+      "pending": false,
+      "authorizedUser": "Diana",
+      "icon": null
+    },
+    {
+      "type": "Payment",
+      "amount": 99.71,
+      "name": null,
+      "description": null,
+      "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": null
+    },
+    {
+      "type": "Payment",
+      "amount": 73.58,
+      "name": null,
+      "description": null,
+      "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": null
+    },
+    {
+      "type": "Credit",
+      "amount": 21.61,
+      "name": "IKEA",
+      "description": null,
+      "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+      "pending": false,
+      "authorizedUser": "Diana",
+      "icon": null
+    },
+    {
+      "type": "Credit",
+      "amount": 21.61,
+      "name": "Target",
+      "description": null,
+      "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+      "pending": false,
+      "authorizedUser": "Diana",
+      "icon": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "transactionDetails": {
+    "type": "Payment",
+    "amount": 73.58,
+    "name": null,
+    "description": null,
+    "date": "Thu Sep 01 2022 23:15:30 GMT+0300 (GMT+03:00)",
+    "pending": false,
+    "authorizedUser": null,
+    "icon": null
+  }
+}
