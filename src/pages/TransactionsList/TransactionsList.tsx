@@ -1,10 +1,12 @@
-import { NavLink } from 'react-router';
+import { CardBalance, LatestTransactions } from './components';
+import classNames from './TransactionsList.module.css';
 
 const TransactionList = () => {
   return (
-    <>
-      <NavLink to='/transactions/abcd'>view transaction details</NavLink>
-    </>
+    <main className={classNames.wrapper}>
+      <CardBalance />
+      <LatestTransactions />
+    </main>
   );
 };
 

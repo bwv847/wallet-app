@@ -1,0 +1,75 @@
+.wrapper {
+    padding-top: .7em;
+}
+
+.transactions {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 0 1em;
+    background: white;
+}
+
+.transaction {
+    background: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    height: 84px;
+}
+
+.transactionImage {
+    background: #494949;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.paymentTransactionBackground {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.transactionBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: .5rem 0 .5rem .8rem;
+}
+
+.transactionHeader {
+    display: flex;
+    gap: .8rem;
+    line-height: 1.4rem;
+}
+
+.transactionName {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.transactionAmount {
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+
+.transactionDetailsLink {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+
+/* TODO: create and move to util classNames file */
+.text {
+    color: #696969;
+    line-height: 1.3rem;
+}

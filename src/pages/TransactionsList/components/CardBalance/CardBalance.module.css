@@ -1,0 +1,58 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5em;
+}
+
+.balance,
+.points,
+.paymentDue {
+    background: #fff;
+    border-radius: 8px;
+    padding: .6em .8em;
+}
+
+.balance {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.balanceSubheader {
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+.balanceHeader {
+    font-size: 1.9rem;
+    line-height: 2rem;
+}
+
+.text {
+    color: #696969;
+}
+
+.points {
+    grid-column: 1 / 1;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.paymentDue {
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.paymentDueCheckIcon {
+    background: #e5e5e5;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
