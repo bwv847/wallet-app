@@ -3,20 +3,7 @@ import { transactionDetails } from '../../mockApiResponses/transactionDetails.js
 import { faLessThan } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from './TransactionDetail.module.css';
-
-function formatDateToMMDDYYYYHHMM(dateString: string) {
-  const date = new Date(dateString);
-
-  // Extract components
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  const year = date.getFullYear();
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-
-  // Format as mm/dd/yyyy, hh:mm
-  return `${month}/${day}/${year}, ${hours}:${minutes}`;
-}
+import { formatDateToMMDDYYYYHHMM } from '../../utils';
 
 const TransactionDetail = () => {
   return (
