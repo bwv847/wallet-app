@@ -68,7 +68,6 @@
     border-bottom: none;
 }
 
-/* TODO: create and move to util classNames file */
 .text {
     color: #696969;
     line-height: 1.3rem;

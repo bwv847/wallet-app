@@ -10,24 +10,33 @@ const TransactionDetail = () => {
     <main className={classNames.wrapper}>
       <NavLink to='/transactions/'>
         <FontAwesomeIcon icon={faLessThan} />
+        <span className='sr-only'>Back to transactions</span>
       </NavLink>
-      <div>
-        <h1 className={classNames.amount}>${transactionDetails.amount}</h1>
-        <div className={classNames.name}>{transactionDetails.name}</div>
-        <div className={classNames.date}>
+      <section aria-labelledby='transaction-amount'>
+        <h1 id='transaction-amount' className={classNames.amount}>
+          ${transactionDetails.amount}
+        </h1>
+        <p className={classNames.name}>{transactionDetails.name}</p>
+        <time className={classNames.date} dateTime={transactionDetails.date}>
           {formatDateToMMDDYYYYHHMM(transactionDetails.date)}
+        </time>
+      </section>
+      <section className={classNames.infoList}>
+        <div className={`${classNames.infoItem} ${classNames.infoItemStatus}`}>
+          <p>
+            <strong>Status:</strong> {transactionDetails.status}
+          </p>
+          <p>{transactionDetails.cardName}</p>
         </div>
-      </div>
-      <div className={classNames.infoList}>
-        <div className={classNames.infoItem + ' ' + classNames.infoItemStatus}>
-          <b>Status: {transactionDetails.status}</b>
-          <div>{transactionDetails.cardName}</div>
+        <div className={`${classNames.infoItem} ${classNames.infoItemTotals}`}>
+          <p>
+            <strong>Total</strong>
+          </p>
+          <p>
+            <strong>${transactionDetails.amount}</strong>
+          </p>
         </div>
-        <div className={classNames.infoItem + ' ' + classNames.infoItemTotals}>
-          <b>Total</b>
-          <b>${transactionDetails.amount}</b>
-        </div>
-      </div>
+      </section>
     </main>
   );
 };
